@@ -1,9 +1,9 @@
 HOW TO RUN
 
 
-     $JAVA_HOME/bin/java -jar -Dhttp.port=8081 -Dfile=/absolute/path/to/pricefile.csv -Dminimal.closing.size=3 zio-product-offer-aggregator-assembly-1.0.jar
+     $JAVA_HOME/bin/java -jar -Dhttp.port=8081 -Dminimal.closing.size=3 -Dfile=/absolute/path/to/pricefile.csv  zio-product-offer-aggregator-assembly-1.0.jar
 
-* JAR can be downloaded from https://github.com/RobertMakyla/utils/tree/master/challenge
+* JAR and CSV file can be downloaded from https://github.com/RobertMakyla/utils/tree/master/challenge
 * when it's running, quick health-check: in your browser go to http://localhost:8081 to make sure port 8081 is OK and the welcome message prints out the minimal closing size
 * about properties:
     http.port            - if you skip it, a default value from application.conf will be taken: 8080
